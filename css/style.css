@@ -113,4 +113,20 @@ body {
 .offers__item-accesories {
   background-image: url(../img/offer-accesories.jpg);
   width: 100%;
+}
+
+.offers__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.offers__subtitle {
+  color: #F16D7F;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
