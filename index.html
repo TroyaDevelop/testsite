@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин одежды</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <div class="headerchild1">
-            logo-img
-            loupe-img
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__controls">
+                <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                <img src="./img/loupe.svg" alt="loupe" width="26" height="27">
+            </div>
+                <div class="header__controls">
+                <button class="header__burger">
+                    <img src="./img/menu.svg" alt="menu" width="32" height="23">
+                </button>
+                <a class="header__login-link" href="#"><img src="./img/login.svg" alt="login" width="29" height="29"></a>
+                <a href="#">cart-img</a>
+                </div>
+            </div>
         </div>
-        <div class="headerchild2">
-            <button>menu-img</button>
-            <a href="#">person-img</a>
-            <a href="#">cart-img</a>
-        </div>
-        <nav>
+        <nav class="header__navigation">
             MENU
             <ul>
                 <li>
@@ -44,18 +54,32 @@
             </ul>
         </nav>
     </header>
-    <main class="content">
-        <section>
-            Man-img
-            <h1>The brand of luxion section</h1>
+    <main>
+        <section class="brand">
+            <img src="./img/brand-man.jpg" alt="brand__img" width="800" height="765">
+            <div class="brand__title-wrapper">
+                <h1 class="brand__title">the brand<span class="brand__subtitle"> of luxerious <span class="brand__subtitle-pink">fashion</span></span></h1>
+            </div>
         </section>
-        <section>
-            <h2>Специальные предложения</h2>
-            <ul>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
-                <li><a href="#">link</a></li>
+        <section class="offers container">
+            <h2 class="visually-hidden">Специальные предложения</h2>
+            <ul class="offers__list">
+                <li class="offers__item offers__item-woman">
+                    <h3>30% off</h3>
+                    <p>for woman</p>
+                </li>
+                <li class="offers__item offers__item-man">
+                    <h3>30% off</h3>
+                    <p>for man</p>
+                </li>
+                <li class="offers__item offers__item-kid">
+                    <h3>30% off</h3>
+                    <p>for kids</p>
+                </li>
+                <li class="offers__item offers__item-accesories">
+                    <h3>30% off</h3>
+                    <p>for accesories</p>
+                </li>
             </ul>
         </section>
         <section>
