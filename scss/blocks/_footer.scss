@@ -1,0 +1,76 @@
+.footer__info{
+    background-image: url(../img/photo-subscribe.jpg);
+}
+
+.footer__info-wrapper{
+    min-height: 448px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__info img{
+    display: flex;
+    margin: 0 auto;
+}
+
+.footer__comment-title{
+    width: 400px;
+    @include font(20px, 24px, 400);
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+.footer__subscribe-title{
+    @include font(24px 40px 700);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer__subscribe-subtitle{
+    display: block;
+    @include font(18px 30px 400);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 25px 0;
+}
+
+.footer__subscribe-form{
+    display: flex;
+}
+
+.footer__subscribe-input{
+    background-color: #E1E1E1;
+    border: 0px;
+    border-radius: 40px 0 0 40px;
+    width: 240px;
+    height: 49px;
+    padding: 0 0 0 15px;
+}
+
+.footer__subscribe-submit{
+    color: white;
+    background-color: #F16D7F;
+    border: 0;
+    border-radius: 0 40px 40px 0;
+    width: 100px;
+}
+
+.copyright{
+    color: white;
+    background-color: #222222;
+    
+    .copyright__wrapper{
+        min-height: 79px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer__links-icon:hover .footer__links-back{
+    fill: #F16D7F;
+}
+.footer__links-icon:hover .footer__links-front{
+    fill: white;
+}

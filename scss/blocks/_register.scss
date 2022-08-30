@@ -1,0 +1,70 @@
+.register{
+    
+    .register__heading-wrapper{
+        min-height: 148px;
+        background-color: #F8F3F4;
+    }
+    
+    .register-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .register__heading{
+        color: #F16D7F;
+        @include font(24px, 29px, 400);
+        padding: 55px 0 0 150px;
+    }
+    
+    .register__form{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .register__firstname, .register__lastname, .register__email, .register__password, .register__prompt{
+        width: 360px;
+        height: 45px;
+        margin: 33px 0 0px 0;
+    }
+    
+    .register__gender-wrapper{
+        margin: 25px 0 25px 0;
+    }
+    
+    .register__prompt{
+        color: #B1B1B1;
+        @include font(15px, 16px, 300);
+    }
+    
+    .register__submit{
+        color: #F16D7F;
+        color: white;
+        background-color: #F16D7F;
+        border: 0;
+        width: 167px;
+        height: 50px;
+        margin: 30px 0 0 0;
+    }
+    
+    .register__info-title{
+        width: 600px;
+        @include font(24px, 29px, 300);
+        margin: 25px 0 25px 0;
+    }
+    
+    .register__info-subtitle{
+        position: relative;
+        @include font(24px, 29px, 300);
+        margin: 10px 0 0 0;
+    }
+    
+    .register__info-subtitle:before{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 16px;
+        background-image: url(../img/check.svg);
+        left: -35px;
+        top: 7px;
+    }
+}
