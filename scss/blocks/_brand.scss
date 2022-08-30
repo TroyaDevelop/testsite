@@ -1,0 +1,36 @@
+.brand{
+    display: flex;
+    margin: 0 0 63px 0;
+
+    .brand__title-wrapper{
+        padding: 0 0 0 91px;
+        background-color: #F1E4E6;
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+    }
+    
+    .brand__title{
+        @include font(48px, 58px, 900);
+        text-transform: uppercase;
+        position: relative;
+    
+        &:before {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 100%;
+            background-color: palevioletred;
+            left: -20px;
+        }
+    }
+    
+    .brand__subtitle{
+        display: block;
+        @include font(37px, 44px, 700);
+    
+        &-pink{
+            color: hotpink;
+        }
+    }
+}
