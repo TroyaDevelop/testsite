@@ -1,5 +1,5 @@
 .advantage{
-    background-color: #222224;
+    background-color: $dark-gray;
 
     .advantage__wrapper{
         min-height: 420px;
@@ -18,14 +18,14 @@
     }
     
     .advantage__title{
-        color: white;
+        color: $white;
         @include font(20px, 24px 400);
         text-align: center;
         margin: 15px 0 15px 0;
     }
     
     .advantage__subtitle{
-        color: white;
+        color: $white;
         @include font(14px, 17px 300);
         text-align: center;
     }    

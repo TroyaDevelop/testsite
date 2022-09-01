@@ -22,14 +22,14 @@
 }
 
 .footer__subscribe-title{
-    @include font(24px 40px 700);
+    @include font(24px, 40px, 700);
     text-align: center;
     text-transform: uppercase;
 }
 
 .footer__subscribe-subtitle{
     display: block;
-    @include font(18px 30px 400);
+    @include font(18px, 30px, 400);
     text-align: center;
     text-transform: uppercase;
     margin: 0 0 25px 0;
@@ -40,7 +40,7 @@
 }
 
 .footer__subscribe-input{
-    background-color: #E1E1E1;
+    background-color: $light-pink;
     border: 0px;
     border-radius: 40px 0 0 40px;
     width: 240px;
@@ -49,7 +49,7 @@
 }
 
 .footer__subscribe-submit{
-    color: white;
+    color: $white;
     background-color: #F16D7F;
     border: 0;
     border-radius: 0 40px 40px 0;
@@ -57,7 +57,7 @@
 }
 
 .copyright{
-    color: white;
+    color: $white;
     background-color: #222222;
     
     .copyright__wrapper{
@@ -72,5 +72,5 @@
     fill: #F16D7F;
 }
 .footer__links-icon:hover .footer__links-front{
-    fill: white;
+    fill: $white;
 }

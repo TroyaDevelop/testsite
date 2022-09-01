@@ -2,18 +2,20 @@
     
     .register__heading-wrapper{
         min-height: 148px;
-        background-color: #F8F3F4;
+        background-color: $light-pink;
     }
     
     .register-wrapper{
         display: flex;
         justify-content: space-between;
+        margin: 25px 0 25px 0;
     }
     
     .register__heading{
         color: #F16D7F;
         @include font(24px, 29px, 400);
         padding: 55px 0 0 150px;
+        text-transform: uppercase;
     }
     
     .register__form{
@@ -38,7 +40,7 @@
     
     .register__submit{
         color: #F16D7F;
-        color: white;
+        color: $white;
         background-color: #F16D7F;
         border: 0;
         width: 167px;
