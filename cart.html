@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Регистрация</title>
+    <title>Корзина</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,41 +55,49 @@
         </div>
     </header>
     <main>
-        <section class="register">
-            <div class="register__heading-wrapper">
-                <h2 class="register__heading">Registration</h2>
+        <section class="cart">
+            <div class="cart__heading-wrapper">
+                <h2 class="cart__heading">Shopping cart</h2>
             </div>
             <div class="container">
-                <div class="register-wrapper">
-                    <form class="register__form">
-                        <legend>Your Name</legend>
-                        <fieldset>
-                        <input class="register__firstname" type="text" placeholder="First Name">
-                        <input class="register__lastname" type="text" placeholder="Last Name">
-                        </fieldset>
-                        <div class="register__gender-wrapper">
-                        <input class="register__gender" id="gender__male" name="gender" type="radio">
-                        <label for="gender__male">Male</label>
-                        <input class="register__gender" id="gender__female" name="gender" type="radio">
-                        <label for="gender__female">Female</label>
+                <div class="cart__wrapper">
+                    <div class="cart__products">
+                        <div class="cart__card">
+                            <img src="./img/product-1.jpg" alt="man" width="262" height="300">
+                            <div class="cart__card-wrapper">
+                                <h3 class="cart__card-title">Mango People T-Shirt</h3>
+                                <p class="cart__card-cost">Price: <span class="cart__card-cost-pink">300$</span></p>
+                                <p class="cart__card-color">Color: Red</p>
+                                <p class="cart__card-size">Size: XL</p>
+                                <p class="cart__card-quantity">Quantity: 2</p>
+                            </div>
                         </div>
-                        <legend>Login Details</legend>
-                        <fieldset>
-                        <input class="register__email" type="email" placeholder="Email">
-                        <input class="register__password" type="password" placeholder="Password">
-                        <p class="register__prompt">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-                        </fieldset>
-                        <button class="register__submit" type="submit">JOIN NOW</button>
-                    </form>
-                <div class="register__info">
-                    <p class="register__info-title">LOYALTY HAS ITS PERKS</p>
-                    <p class="register__info-title">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
-                    <p class="register__info-subtitle">15% off welcome offer</p>
-                    <p class="register__info-subtitle">Free shipping, returns and exchanges on all orders</p>
-                    <p class="register__info-subtitle">$10 off a purchase on your birthday</p>
-                    <p class="register__info-subtitle">Early access to products</p>
-                    <p class="register__info-subtitle">Exclusive offers & rewards</p>
-                </div>
+                        <div class="cart__card">
+                            <img src="./img/product-2.jpg" alt="man" width="262" height="300">
+                            <div class="cart__card-wrapper">
+                                <h3 class="cart__card-title">Mango People T-Shirt</h3>
+                                <p class="cart__card-cost">Price: <span class="cart__card-cost-pink">300$</span></p>
+                                <p class="cart__card-color">Color: Red</p>
+                                <p class="cart__card-size">Size: XL</p>
+                                <p class="cart__card-quantity">Quantity: 2</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart__shipping">
+                        <form class="cart__form">
+                            <legend>SHIPPING ADRESS</legend>
+                            <input class="cart__city" type="text" placeholder="City">
+                            <input class="cart__state" type="text" placeholder="State">
+                            <input class="cart__postcode" type="number" placeholder="Postcode/Zip">
+                            <button class="cart__get" type="submit">Get a quote</button>
+                        </form>
+                        <form class="cart__checkout">
+                            <p class="cart__subtotal">Sub total 900$</p>
+                            <p class="cart__grandtotal">Grand total <span class="cart__grandtotal-pink">900$</span></p>
+                            <button class="cart__submit" type="submit">Proceed to checkout</button>
+                        </rorm>
+                    </div>
                 </div>
             </div>
         </section>
