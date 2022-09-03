@@ -10,6 +10,10 @@
     
     .advantage__list{
         display: flex;
+
+        @include mobile{
+            flex-direction: column;
+        }
     }
     
     .advantage__list img{

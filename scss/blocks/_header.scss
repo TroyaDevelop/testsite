@@ -86,5 +86,15 @@
     
     .header__login-link{
         margin: 0 34px 0 0;
+
+        @include mobile{
+            display: none;
+        }
+    }
+
+    .header__cart-link{
+        @include mobile{
+            display: none;
+        }
     }
 }

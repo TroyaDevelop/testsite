@@ -19,6 +19,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding: 10px 10px 10px 10px;
     }
     
     .products__item{
@@ -26,6 +27,19 @@
         width: 360px;
         min-height: 420px;
         margin: 0 0 32px 0;
+
+        @include tablet{
+            width: 43%;
+        }
+
+        @include mobile{
+            width: 100%;
+        }
+    }
+
+    .products__item img{
+        width: 100%;
+        height: auto;
     }
     
     .products__item:hover::before {
@@ -55,12 +69,14 @@
     
     .products__title{
         @include font(13px, 16px, 400);
+        width: 360px;
         text-transform: uppercase;
         margin: 10px 0 10px 0;
     }
     
     .products__subtitle{
         color: #5D5D5D;
+        width: 360px;
         @include font(14px, 17px, 300);
         margin: 0 0 10px 0;
     }
