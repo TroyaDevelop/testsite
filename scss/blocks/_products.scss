@@ -76,7 +76,7 @@
     
     .products__subtitle{
         color: #5D5D5D;
-        width: 360px;
+        max-width: 280px;
         @include font(14px, 17px, 300);
         margin: 0 0 10px 0;
     }
