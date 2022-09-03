@@ -20,6 +20,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 10px 10px 10px 10px;
+
+        @include mobile{
+            justify-content: center;
+            align-items: center;
+        }
     }
     
     .products__item{
@@ -69,7 +74,7 @@
     
     .products__title{
         @include font(13px, 16px, 400);
-        width: 360px;
+        width: 280px;
         text-transform: uppercase;
         margin: 10px 0 10px 0;
     }

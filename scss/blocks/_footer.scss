@@ -19,7 +19,7 @@
 }
 
 .footer__comment-title{
-    width: 400px;
+    max-width: 400px;
     @include font(20px, 24px, 400);
     text-align: center;
     margin: 15px 0 0 0;
@@ -50,6 +50,10 @@
     width: 240px;
     height: 49px;
     padding: 0 0 0 15px;
+
+    @include mobile{
+        width: 200px;
+    }
 }
 
 .footer__subscribe-submit{
