@@ -121,6 +121,7 @@ input {
   left: 0px;
   display: none;
   top: 100%;
+  z-index: 1;
 }
 .header .header__burger:hover + .header__navigation,
 .header .header__burger:focus + .header__navigation {
@@ -556,6 +557,7 @@ input {
   border: 0;
   border-radius: 0 40px 40px 0;
   width: 100px;
+  height: 49px;
 }
 
 .copyright {
