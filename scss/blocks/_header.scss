@@ -39,6 +39,7 @@
         left: 0px;
         display: none;
         top: 100%;
+        z-index: 1;
     }
     
     .header__burger:hover + .header__navigation,
