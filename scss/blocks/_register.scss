@@ -9,6 +9,11 @@
         display: flex;
         justify-content: space-between;
         margin: 25px 0 25px 0;
+
+        @include mobile{
+            display: block;
+            flex-direction: column;
+        }
     }
     
     .register__heading{
@@ -49,7 +54,7 @@
     }
     
     .register__info-title{
-        width: 600px;
+        max-width: 600px;
         @include font(24px, 29px, 300);
         margin: 25px 0 25px 0;
     }
@@ -58,6 +63,10 @@
         position: relative;
         @include font(24px, 29px, 300);
         margin: 10px 0 0 0;
+
+        @include mobile{
+            margin: 0 0 0 40px;
+        }
     }
     
     .register__info-subtitle:before{
