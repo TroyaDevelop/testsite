@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин одежды</title>
+    <title>Продукты</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -56,118 +56,46 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="brand">
-            <img class="brand__man" src="./img/brand-man.jpg" alt="brand__img" width="800" height="765">
-            <div class="brand__title-wrapper">
-                <h1 class="brand__title">the brand<span class="brand__subtitle"> of luxerious <span class="brand__subtitle-pink">fashion</span></span></h1>
+    <main class="product">
+        <section class="slider">
+            <div class="slider__wrapper">
+                <img src="./img/slider.png">
+            </div>
+            <div class="slider__title-wrapper">
+                <h3 class="slider__heading">Woman Collection</h3>
+                <h3 class="slider__title">MOSCHINO CHEAP AND CHIC</h3>
+                <p class="slider__subtitle">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+                <p class="slider__cost">561$</p>
+            </div>
+            <div class="slider__button-wrapper">
+                <button class="slider__addcart">Добавить в корзину</button>
             </div>
         </section>
-        <section class="offers container">
-            <h2 class="visually-hidden">Специальные предложения</h2>
-            <ul class="offers__list">
-                <li class="offers__item offers__item-woman">
-                    <div class="offers__title-wrapper">
-                        <h3 class="offers__title">30% off</h3>
-                        <p class="offers__subtitle">for women</p>
-                    </div>
-                </li>
-                <li class="offers__item offers__item-man">
-                    <div class="offers__title-wrapper">
-                        <h3 class="offers__title">hot deal</h3>
-                        <p class="offers__subtitle">for men</p>
-                    </div>
-                </li>
-                <li class="offers__item offers__item-kid">
-                    <div class="offers__title-wrapper">
-                        <h3 class="offers__title">new arrivals</h3>
-                        <p class="offers__subtitle">for kids</p>
-                    </div>
-                </li>
-                <li class="offers__item offers__item-accesories">
-                    <div class="offers__title-wrapper">
-                        <h3 class="offers__title">luxirous and trendy</h3>
-                        <p class="offers__subtitle">accesories</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section class="products container">
-            <div class="products__heading-wrapper">
-            <h2 class="products__heading">Featured Items</h2>
-            <p class="products__heading-title">Shop for items based on what we featured in this week</p>
-            </div>
-            <ul class="products__list">
-                <li class="products__item">
-                        <img src="./img/product-1.jpg" alt="product" width="360" height="420">
-                        <button class="products__item-addcart">Добавить в корзину</button>
-                        <h3 class="products__title">Lorem ipsum dolor sit amet.</h3>
-                        <p class="products__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, veniam.</p>
-                        <p class="products__cost">$45.00</p>
-                </li>
-                <li class="products__item">
-                        <img src="./img/product-2.jpg" alt="product" width="360" height="420">
-                        <button class="products__item-addcart">Добавить в корзину</button>
-                        <h3 class="products__title">Lorem ipsum dolor sit amet.</h3>
-                        <p class="products__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, veniam.</p>
-                        <p class="products__cost">$45.00</p>
-                </li>
-                <li class="products__item">
-                        <img src="./img/product-3.jpg" alt="product" width="360" height="420">
-                        <button class="products__item-addcart">Добавить в корзину</button>
-                        <h3 class="products__title">Lorem ipsum dolor sit amet.</h3>
-                        <p class="products__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, veniam.</p>
-                        <p class="products__cost">$45.00</p>
-                </li>
-                <li class="products__item">
-                        <img src="./img/product-4.jpg" alt="product" width="360" height="420">
-                        <button class="products__item-addcart">Добавить в корзину</button>
-                        <h3 class="products__title">Lorem ipsum dolor sit amet.</h3>
-                        <p class="products__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, veniam.</p>
-                        <p class="products__cost">$45.00</p>
-                </li>
-                <li class="products__item">
-                    <img src="./img/product-5.jpg" alt="product" width="360" height="420">
-                    <button class="products__item-addcart">Добавить в корзину</button>
-                    <h3 class="products__title">Lorem ipsum dolor sit amet.</h3>
-                    <p class="products__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, veniam.</p>
-                    <p class="products__cost">$45.00</p>
-                </li>
-                <li class="products__item">
-                    <img src="./img/product-6.jpg" alt="product" width="360" height="420">
-                    <button class="products__item-addcart">Добавить в корзину</button>
-                    <h3 class="products__title">Lorem ipsum dolor sit amet.</h3>
-                    <p class="products__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, veniam.</p>
-                    <p class="products__cost">$45.00</p>
-                </li>
-            </ul>
-            <div class="products__browse-wrapper">
-                <button class="products__browse button__hover">
-                    BROWSE ALL PRODUCT
-                </button>
-            </div>
-        </section>
-        <section class="advantage">
+        <section class="products">
             <div class="container">
-                <div class="advantage__wrapper">
-                    <ul class="advantage__list">
-                        <li class="advantage__item">
-                            <img src="./img/adv-icon1.png">
-                            <h3 class="advantage__title">Free delivery</h3>
-                            <p class="advantage__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, cum?</p>
-                        </li>
-                        <li class="advantage__item">
-                            <img src="./img/adv-icon2.png">
-                            <h3 class="advantage__title">Sales & discounts</h3>
-                            <p class="advantage__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, cum?</p>
-                        </li>
-                        <li class="advantage__item">
-                            <img src="./img/adv-icon3.png">
-                            <h3 class="advantage__title">Quality assurance</h3>
-                            <p class="advantage__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, cum?</p>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="products__list">
+                    <li class="products__item">
+                            <img src="./img/product-1.jpg" alt="product" width="360" height="420">
+                            <button class="products__item-addcart">Добавить в корзину</button>
+                            <h3 class="products__title">Lorem ipsum dolor sit amet.</h3>
+                            <p class="products__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, veniam.</p>
+                            <p class="products__cost">$45.00</p>
+                    </li>
+                    <li class="products__item">
+                            <img src="./img/product-2.jpg" alt="product" width="360" height="420">
+                            <button class="products__item-addcart">Добавить в корзину</button>
+                            <h3 class="products__title">Lorem ipsum dolor sit amet.</h3>
+                            <p class="products__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, veniam.</p>
+                            <p class="products__cost">$45.00</p>
+                    </li>
+                    <li class="products__item">
+                            <img src="./img/product-3.jpg" alt="product" width="360" height="420">
+                            <button class="products__item-addcart">Добавить в корзину</button>
+                            <h3 class="products__title">Lorem ipsum dolor sit amet.</h3>
+                            <p class="products__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, veniam.</p>
+                            <p class="products__cost">$45.00</p>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
